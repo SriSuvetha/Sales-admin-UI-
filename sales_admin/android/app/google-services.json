@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "687570652360",
+    "project_id": "salesadmin-25092",
+    "storage_bucket": "salesadmin-25092.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687570652360:android:a49a8b7900a5e76b45a9fd",
+        "android_client_info": {
+          "package_name": "com.sri.sales_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687570652360-geul80g8j4e8kls56kh5lcg3273ir51r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByj17hwG4ksMu6UEbXAI2ZAM8T3hBLDbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687570652360-geul80g8j4e8kls56kh5lcg3273ir51r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+import 'package:flutter/material.dart';
+import 'package:sales_admin/size_config.dart';
+
+const kPrimaryColor = Colors.lightBlue;
+const kPrimaryLightColor = Color(0xFFFFECDF);
+const kShadowColor = Color(0xFF8E8585);
+Color kTextColorLight = Color(0xFF1C97D5).withOpacity(0.5);
+Color kTextColorDark = Color(0xFF008AD2);
+const kBlueLightColor = Color(0xFFC7B8F5);
+const kPrimaryGradientColor = LinearGradient(
+  begin: Alignment.topLeft,
+  end: Alignment.bottomRight,
+  colors: [Color(0xFF979797), Color(0xFF757575)],
+);
+const kSecondaryColor = Color(0xFF979797);
+const kTextColor = Color(0xFF757575);
+
+const kAnimationDuration = Duration(milliseconds: 200);
+
+final headingStyle = TextStyle(
+  fontSize: getProportionateScreenWidth(28),
+  fontWeight: FontWeight.bold,
+  color: Colors.black,
+  height: 1.5,
+);
+
+const defaultDuration = Duration(milliseconds: 250);
+
+// Form Error
+final RegExp emailValidatorRegExp =
+    RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
+const String kEmpNullError = "Please Enter your Employee id";
+const String kInvalidEmpError = "Please Enter Valid Employee id";
+const String kPassNullError = "Please Enter your password";
+const String kShortPassError = "Password is too short";
+const String kMatchPassError = "Passwords don't match";
+const String kNamelNullError = "Please Enter your name";
+const String kPhoneNumberNullError = "Please Enter your phone number";
+const String kAddressNullError = "Please Enter your address";
+
+final otpInputDecoration = InputDecoration(
+  contentPadding:
+      EdgeInsets.symmetric(vertical: getProportionateScreenWidth(15)),
+  border: outlineInputBorder(),
+  focusedBorder: outlineInputBorder(),
+  enabledBorder: outlineInputBorder(),
+);
+
+OutlineInputBorder outlineInputBorder() {
+  return OutlineInputBorder(
+    borderRadius: BorderRadius.circular(getProportionateScreenWidth(15)),
+    borderSide: BorderSide(color: kTextColor),
+  );
+}
